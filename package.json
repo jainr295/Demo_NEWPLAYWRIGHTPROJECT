@@ -1,0 +1,21 @@
+{
+  "name": "newplaywright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "fulltestcase": "npx playwright test",
+    "smokeTest": "npx playwright test tests/Annotation.spec.js ",
+    "regressionTest": "npx playwright test --grep @regressionTest",
+    "smokeAndregression": "npx playwright test --grep @smoke | @regressionTest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.5",
+    "allure-commandline": "^2.32.2",
+    "allure-playwright": "^3.1.0"
+  }
+}
